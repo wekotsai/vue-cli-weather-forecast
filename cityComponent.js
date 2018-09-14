@@ -5,7 +5,6 @@ Vue.component("city", {
             return response.json();
         })
         .then(myJson => {
-            console.log(myJson);
             this.cities = myJson.list;
         });
     },
@@ -17,9 +16,8 @@ Vue.component("city", {
         
                    <p>{{ city.weather[0].main }}</p>
             
-                   <p>{{ city.main.temp }}</p>
+                   <p>{{ city.main.temp + '°C'}}</p>
                 </div>
-            
         </div>
     </div>`,
     data(){
