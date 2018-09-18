@@ -4,7 +4,7 @@ Vue.component("oneCity", {
     //     console.log(myUrl);
     // },
     template: `
-        <div class="city" :background="this.myImgUrl">
+        <div class="city" :style="{ backgroundImage: 'url(' + this.myImgUrl + ')'}">
 
             <p>{{ city.name }}</p>
 
