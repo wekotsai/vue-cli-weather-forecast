@@ -1,8 +1,5 @@
 Vue.component("oneCity", {
     props: ['city'],
-    // created(){
-    //     console.log(myUrl);
-    // },
     template: `
         <div class="city" :style="{ backgroundImage: 'url(' + this.myImgUrl + ')'}">
 
@@ -30,6 +27,3 @@ Vue.component("oneCity", {
         }
     }
 });
-
-//<div class="city" style="background-image: :url(url)">
-//<p>{{ myUrl }}</p>
